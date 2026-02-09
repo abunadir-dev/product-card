@@ -1,0 +1,120 @@
+/* ===== СБРОС ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== ОБЩИЙ КОНТЕЙНЕР ===== */
+.all-elements {
+    width: 1110px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: url("../images/bg-dandelions.png");
+    background-size: 790px 697px;
+    background-repeat: no-repeat;
+    background-position: 0 auto ;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+.product-selection__title {
+    font-size: 70px;
+    font-weight: 400;
+    color: #515076;
+    margin-top: 220px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+
+/* ===== ОБЁРТКА КАРТОЧЕК ===== */
+.product-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+/* ===== КАРТОЧКА ===== */
+.product-card {
+    width: 340px;
+    background-color: #F7F7FA;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* ===== ИЗОБРАЖЕНИЕ ===== */
+.product-card__image,
+.card__image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* ===== ТИП КОЖИ ===== */
+.product-card__for-skin {
+    font-size: 12px;
+    font-weight: 400;
+    color: #A5A3B9;
+    margin-bottom: 6px;
+}
+
+/* ===== НАЗВАНИЕ ===== */
+.product-card__title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #515076;
+    margin-bottom: 8px;
+}
+
+/* ===== ОПИСАНИЕ ===== */
+.product-card__description {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* ===== СЛОВО "Состав:" ===== */
+.product-card__composition {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* ===== СПИСОК ===== */
+.product-card__ingredients {
+    font-size: 13px;
+    padding-left: 18px;
+    margin-bottom: 15px;
+}
+
+/* ===== БЛОК ЦЕНЫ ===== */
+.product-card__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* ===== ТЕКСТ "Цена" ===== */
+.product-card__price {
+    font-size: 16px;
+    color: #515076;
+}
+
+/* ===== СТОИМОСТЬ ===== */
+.product-card__price-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #515076;
+}
+
+
