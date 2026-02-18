@@ -29,3 +29,8 @@ const mainTitle = document.querySelector('.product-selection__title');
 mainTitle.addEventListener('mouseover', function() {
     console.log(this.textContent);
 });
+
+const colorButton = document.getElementById('toggle-color-button');
+colorButton.addEventListener('click', function() {
+    this.classList.toggle('button-alternate');
+})
