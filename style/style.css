@@ -8,6 +8,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 30%;
+    background-color: #00ffff;
+}
+
+.button-alternate {
+    background-color: #525076 !important;
+    color: #F7F7FA !important;
+}
+
 .all-elements {
     width: 1110px;
     display:flex;
