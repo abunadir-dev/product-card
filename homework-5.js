@@ -8,7 +8,7 @@ showWeather(`Стамбул`, 5);
 //Д.З.5_Пункт-4:Создал: перем.со скоростью света; функцию сравнения скорости со скоростью света.
 
 const SPEED_OF_LIGHT = 300000;
-function checkSpeed(speed) {
+function compareSpeed(speed) {
     if (speed > SPEED_OF_LIGHT) {
         console.log(`Сверхсветовая скорость `);
     } else if (speed < SPEED_OF_LIGHT) {
@@ -17,9 +17,9 @@ function checkSpeed(speed) {
         console.log(`Скорость света`);
     }
 }
-checkSpeed(100000);
-checkSpeed(300000);
-checkSpeed(300005);
+compareSpeed(100000);
+compareSpeed(300000);
+compareSpeed(300005);
 
 //Д.З.5_Пункт-5:Создал перем.1-продукт; перем.2-цена; функ.сравнения бюджет для покупки .
 
