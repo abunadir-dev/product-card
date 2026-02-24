@@ -3,15 +3,15 @@
 function showWeather(city, temperature) {
     console.log(`Сейчас в ${city} температура ${temperature} градусов по Цельсию`);
 }
-showWeather(`Стамбул`,5);
+showWeather(`Стамбул`, 5);
 
-//Д.З.5_Пункт-4:Создал: перем.со скоростью света; функцию сравнения скорости.
+//Д.З.5_Пункт-4:Создал: перем.со скоростью света; функцию сравнения скорости со скоростью света.
 
-const speedOfLight = 300000;
+const SPEED_OF_LIGHT = 300000;
 function checkSpeed(speed) {
-    if (speed > speedOfLight) {
+    if (speed > SPEED_OF_LIGHT) {
         console.log(`Сверхсветовая скорость `);
-    } else if (speed < speedOfLight) {
+    } else if (speed < SPEED_OF_LIGHT) {
         console.log(`Субсветовая скорость`);
     } else {
         console.log(`Скорость света`);
