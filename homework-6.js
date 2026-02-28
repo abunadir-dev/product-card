@@ -1,7 +1,7 @@
 // Задание 3: Создаём обьект моими данными.
 
 const myProfile = {
-    firsName: 'АБДУЛЛОХ',
+    firstName: 'АБДУЛЛОХ',
     lastName: 'АБУНАДИР',
     email: 'abufulan@.com',
     phone: '1234567890',
@@ -11,7 +11,6 @@ const myProfile = {
     country: 'Турция',
     city: 'Стамбул',
     relationship: 'Женат'
-
 };
 console.log(myProfile);
 
@@ -32,86 +31,84 @@ console.log(myCar);
 function addMaxSpeed(car) {
     if (!('maxSpeed' in car)) {
         car.maxSpeed = 200;
-    }
+}
 }
 addMaxSpeed(myCar);
 console.log(myCar);
 
 // Задание 6: Создаём функцию, которая выводить значение свойства объекта .
 
-function showProperty(obj, prop) {
+function showPropertyValue(obj, prop) {
     console.log(obj[prop]);
 }
-showProperty(myCar, 'color');
-showProperty(myProfile, 'lastName');
+showPropertyValue(myCar, 'color');
+showPropertyValue(myProfile, 'lastName');
 
 // Задание 7: Создаем массив с названиями продуктов.
 
-const foodList = ['хлеб', 'молоко', 'масло', 'сливки', 'сыр']
+const foodList = ['хлеб', 'молоко', 'масло', 'сливки', 'сыр'];
 console.log(foodList);
 
-// Задание 8: Создаем массив с разными обьектами у которых свои свойста.
+// Задание 8: Создаем массив с разными обълектами у которых свои свойства.
 
 const cars = [
-    {
-        brand: 'Chevrolet',
-        model: 'Spark',
-        year: 2017,
-        color: 'Black',
-        transmission: 'Manual'
-    },
-    {
-        brand: 'Toyota',
-        model: 'Aqua',
-        year: 2017,
-        color: 'Blue',
-        transmission: 'Automatic'
-    },
-    {
-        brand: 'Nissan',
-        model: 'March',
-        year: 2020,
-        color: 'Green',
-        transmission: 'Variator'
-    }
-];
-cars.push({
-        brand: 'Toyota',
-        model: 'Carina',
-        year: 2015,
-        color: 'white',
-        transmission: 'Manual'
-    });
-        console.log(cars);
-
-// Создаем массив и обьединяем его с предыдущим массивом.
-
-const electroCars = [
-    {
-        brand: 'Tesla',
-        model: 'Model Y',
-        year: 2025,
-        color: 'Red',
-        transmission: 'Automatic'
+{
+    brand: 'Chevrolet',
+    model: 'Spark',
+    year: 2017,
+    color: 'Black',
+    transmission: 'Manual'
 },
 {
-        brand: 'Mersedes-Benz',
-        model: 'EQS',
-        year: 2024,
-        color: 'Yellow',
-        transmission: 'Automatic'
+    brand: 'Toyota',
+    model: 'Aqua',
+    year: 2017,
+    color: 'Blue',
+    transmission: 'Automatic'
+},
+{
+    brand: 'Nissan',
+    model: 'March',
+    year: 2020,
+    color: 'Green',
+    transmission: 'Variator'
+}
+];
+cars.push({
+    brand: 'Toyota',
+    model: 'Carina',
+    year: 2015,
+    color: 'White',
+    transmission: 'Manual'
+});
+    console.log(cars);
+
+// Задание 9: Создаем массив и обьединяем его с предыдущим массивом.
+
+const electroCars = [
+{
+    brand: 'Tesla',
+    model: 'Model Y',
+    year: 2025,
+    color: 'Red',
+    transmission: 'Automatic'
+},
+{
+    brand: 'Mercedes-Benz',
+    model: 'EQS',
+    year: 2024,
+    color: 'Yellow',
+    transmission: 'Automatic'
 }
 ];
 const allCars = [...cars, ...electroCars];
 console.log(allCars);
 
-// Создаем функцию которая определяет экологичность авто по году выпуска.
+// Задание 10: Создаем функцию которая определяет экологичность авто по году выпуска.
 
-function addEcoProperty(carsArray) {
-    return carsArray.map(car => {
-        car.isEco = car.year >= 2020 ? true : false ;
-        return car;
-    });
+function getEcoCars(carsArray) {
+    return carsArray.map(car => ({...car,
+        isEco: car.year >= 2020}));
 }
-const carsWithEco = addEcoProperty(allCars);
+const carsWithEco = getEcoCars(allCars);
 console.log(carsWithEco);
