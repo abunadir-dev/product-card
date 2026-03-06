@@ -35,13 +35,10 @@ console.log('Комментарии с email .com:', commentsWithDotCom);
 
 //Уровень-2. Задание-8: Изменил postId по усовию id
 
-const updatedComments = comments.map(comment => {
-  if (comment.id <= 5) {
-    return { ...comment, postId: 2};
-  } else {
-    return { ...comment, postId: 1};
-  }
-});
+const updatedComments = comments.map(comment => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2 : 1
+}));
 console.log('Обновлённые комментарии:', updatedComments);
 
 //Уровень-2. Задание -9: Создание массива состоящего только из id и имени
